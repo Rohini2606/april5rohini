@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>events</h1>
+    <input type="button" value="alter" onclick="mgs()"><br>
+    <br><input type="button" value="delete record" onclick="conf()"><br>
+
+    <br><input type="button" value="prompt" onclick="msg()"/>  
+
+<input type="button" value="time" onclick="time()">
+<p id = "demo"></p>
+
+    <script>
+function mgs(){
+    alert("hello");
+}
+    </script>
+
+    <script>
+    function conf(){
+    var v = confirm("are you sure");
+    if(v==true){
+        alter("ok");
+
+    }
+    else{
+        alter("cancel");
+    }
+
+}
+</script>
+
+<script>
+    function msg(){  
+    var v= prompt("Who are you?");  
+    alert("I am "+v);  
+      
+    }  
+    </script>  
+
+<script>
+function time(){
+setTimeout(  
+function(){  
+alert("Welcome to software")  
+},2000);  
+  
+}  
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
